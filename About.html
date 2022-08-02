@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a165257d25.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header">
+    <nav>
+        <a href="index.html"><img src="Images/smol-logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-arrow-right-to-bracket" onclick="hideMenu()" style="color:white"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Mission.html">Mission</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>     
+        </div>
+        <i class="fa-solid fa-rocket" onclick="showMenu()" style="color:rgb(110, 36, 36)"></i>
+    </nav>
+    
+
+<div class="container">
+    <div class="card">
+        <div class="content">
+        <h2>About Me</h2>
+        
+        
+        <p>
+        
+            My name is Wayne M. Bailey.  I am a Science fiction geek - likely just like you.
+
+            I live in the middle of England and I love all things Back to the Future, Star Wars, Stephen King and everything in between. 
+            
+            I have spent over two years now working on my first book. All of my free time has been devoted to it, I thank my poor wife for her patience, support and love. During this time I have also spent many man-hours learning everything that I can about the writing craft. Wow; its been both hard work and most enlightening. I have learnt such a lot. 
+            
+            I hope to make my project worthy of anyone who spends their valuable time reading it, and I hope that you enjoy reading it as much as I have learnt about writing it.
+            
+            Another point I wanted to make, was that I didn't do very well in my English exams at school, I'm very ashamed to admit that, and I went straight into an electrical engineering apprenticeship; which I did not enjoy. 
+            
+            So I never did do anything about those poor English grades. If people do like my book, what I would just like it to show people, is that If you want to do something like this, please give it a try, jump all in! You never know. 
+            
+            Enjoy yourself trying it. And most of all...  
+            
+            Thank you!
+            
+        </p>
+       
+        <a href="contact.html" class="Btn">Get in touch</a> 
+    </div>
+<div/>
+
+<div class="met">
+    <img src="Meteor.png.png">
+    <img src="Meteor.png.png">
+    <img src="Meteor.png.png">
+    <img src="Meteor.png.png">
+    <img src="Meteor.png.png">
+    <img src="Meteor.png.png">
+    <img src="Meteor.png.png">
+    
+</div>
+
+<!--------JavaScript for toggle-------->
+
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script>
+    VanillaTilt.init(document.querySelector(".card"),{
+		max: 25,
+		speed: 400,
+        glare: true,
+        "max-glare": 1,
+	});
+</script>
+    
+</body>
+
+
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+
+
+
+body{
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   min-height: 100vh;
+}
+.container{
+    position: centre;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+.container .card{
+    position: relative;
+    width: 650px;
+    
+    margin: 20px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+   justify-content: center;
+   align-items: center;
+   border-top: 1px;
+}
+
+.container .card .content{
+    padding: 30px;
+    text-align: center;
+    transition: 0.5s;
+}
+.container .card .content h2{
+    color: white;
+}
+.container .card .content h3{
+    font-size: 15px;
+    color: white;
+    z-index: 1;
+}
+.container .card .content p{
+    font-size: 15px;
+    padding: 36px;
+    color: white;
+    font-weight: 800;
+
+}
+
+
+
+
+
+
+
+
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(Images/astro2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.logo{
+    width: 70px;
+    cursor: pointer;
+}
+.navbar{
+    width: 85%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Btn{
+    color: rgb(238, 234, 233);
+    padding: 10px 25px;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px 20px;
+    position: relative;
+}
+.Btn:hover{
+    border: 1px solid rgb(255, 1, 1);
+    background-color: #792620;
+    transition: 1s;
+
+}
+
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    size: 70px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #dc2a2a;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+   width: 100%;
+}
+
+
+.met img{
+width: 30px;
+animation: meteor 7s linear infinite;
+}
+.met{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: -70px;
+}
+nav .fa-solid{
+    display: none;
+}
+
+
+@keyframes meteor{
+    0%{
+        transform: translateX(0);
+        opacity: 0;
+    }
+    50%{
+       
+        opacity: 1;
+    }
+    70%{
+       
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(+80vh);
+        opacity: 0;
+    }
+}
+.met img:nth-child(1){
+    animation-delay: 2s;
+    width: 25px;
+}
+.met img:nth-child(2){
+    animation-delay: 1s;
+    width: 15px;
+}
+.met img:nth-child(3){
+    animation-delay: 3s;
+    width: 20px;
+}
+.met img:nth-child(4){
+    animation-delay: 4.5s;
+    width: 10px;
+}
+.met img:nth-child(5){
+    animation-delay: 3s;
+    width: 25px;
+}
+.met img:nth-child(6){
+    animation-delay: 6s;
+    width: 22px;
+}
+.met img:nth-child(7){
+    animation-delay: 7s;
+    width: 20px;
+}
+
+
+@media(max-width: 700px){
+.content h1{
+    font-size: 30px;
+    line-height: 30px;
+}
+
+
+
+
+.container .card{
+    position: relative;
+    width: 650px;
+    
+    margin: 20px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+   justify-content: center;
+   align-items: center;
+   border-top: 1px;
+}
+
+.container .card .content{
+    padding: 30px;
+    text-align: center;
+    transition: 0.5s;
+}
+.container .card .content h2{
+    color: white;
+}
+.container .card .content h3{
+    font-size: 15px;
+    color: white;
+    z-index: 1;
+}
+.container .card .content p{
+    font-size: 15px;
+    padding: 36px;
+    color: white;
+    font-weight: 800;
+
+}
+
+
+
+
+
+
+
+nav .fa-solid{
+    display: block;
+    margin: top;
+    font-size: 22px;
+    cursor: pointer;
+    padding: 10px;
+   
+}
+.nav-links ul {
+    padding: 30px;
+}
+
+small{
+    font-size: 10px;
+}
+.nav-links ul li{
+    display: block;
+}
+.nav-links{
+    position: absolute;
+    
+   
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+    background: rgba( 255, 0, 0, 0.3 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 10px );
+-webkit-backdrop-filter: blur( 10px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+}
+</style>
+
+</html>
